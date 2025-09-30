@@ -10,6 +10,8 @@ import path from "path";
 import contactRoute from "./routes/contact.route.js";
 import cors from "cors";
 dotenv.config();
+const PORT=process.env.PORT ||3000;
+const app =express();
 // load data from .env to process.env
 app.use(cors());
 mongoose.connect(process.env.MONGO).then(()=>{
@@ -19,8 +21,7 @@ mongoose.connect(process.env.MONGO).then(()=>{
 });
 
 //  const _dirname =path.resolve();
-const PORT=process.env.PORT ||3000;
-const app =express();
+
 // app.use(cors());
 
 app.use(express.json());
