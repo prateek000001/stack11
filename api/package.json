@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon api/index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build" : "npm run build"
   },
   "repository": {
     "type": "git",
